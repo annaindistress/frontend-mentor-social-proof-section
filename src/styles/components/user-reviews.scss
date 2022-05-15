@@ -10,3 +10,22 @@
         }
     }
 }
+
+@media (min-width: 1200px) {
+    .user-reviews {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        &__item {
+            position: relative;
+            width: 350px;
+
+            @for $i from 2 through 3 {
+                &:nth-of-type(#{$i}) {
+                    top: 16px * ($i - 1);
+                }
+            }
+        }
+    }
+}

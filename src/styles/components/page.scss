@@ -43,3 +43,12 @@
         }
     }
 }
+
+@media (min-width: 1200px) {
+    .page__main {
+        background-image:
+                        url('../images/bg-pattern-top-desktop.svg'),
+                        url('../images/bg-pattern-bottom-desktop.svg');
+        background-size: 584px auto, 1085px auto;
+    }
+}

@@ -1,6 +1,10 @@
 .social-proof {
     max-width: 1110px;
 
+    &__header {
+        margin-bottom: 40px;
+    }
+
     &__title {
         margin: 0 0 18px;
         font-weight: 700;
@@ -12,7 +16,7 @@
     }
 
     &__text {
-        margin: 0 8px 40px;
+        margin: 0 8px;
         text-align: center;
     }
 
@@ -22,5 +26,42 @@
 
     &__user-list {
         margin: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .social-proof {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+
+        &__header {
+            width: 40%;
+            margin-bottom: 0;
+        }
+
+        &__title {
+            margin-bottom: 16px;
+            font-size: 56px;
+            letter-spacing: -2px;
+            text-align: left;
+        }
+
+        &__text {
+            margin-left: 0;
+            text-align: left;
+        }
+
+        &__media-list {
+            width: 50%;
+            margin-bottom: 0;
+        }
+
+        &__user-list {
+            width: 100%;
+            margin-top: 70px;
+        }
     }
 }

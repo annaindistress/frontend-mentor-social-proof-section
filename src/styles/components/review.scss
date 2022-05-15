@@ -50,3 +50,11 @@
         }
     }
 }
+
+@media (min-width: 1200px) {
+    .review {
+        &__header {
+            margin-bottom: 32px;
+        }
+    }
+}
