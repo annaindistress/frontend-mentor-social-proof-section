@@ -1,0 +1,45 @@
+.page {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 1.32;
+    letter-spacing: -.63px;
+    color: $color-neutral-magenta-dark;
+    background-color: $color-neutral-white;
+
+    &__main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-grow: 1;
+        padding: 24px;
+        padding-top: 80px;
+        background-image:
+                        url('../images/bg-pattern-top-mobile.svg'),
+                        url('../images/bg-pattern-bottom-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: 0 0, 100% 100%;
+        background-size: 100% auto;
+    }
+
+    &__footer {
+        padding: 24px;
+        text-align: center;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-primary-magenta;
+
+        &:hover,
+        &:focus {
+            color: $color-primary-pink;
+        }
+    }
+}

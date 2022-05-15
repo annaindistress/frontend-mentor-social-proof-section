@@ -1,0 +1,12 @@
+.user-reviews {
+    padding: 0;
+    list-style: none;
+
+    &__item {
+        margin-bottom: 16px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}

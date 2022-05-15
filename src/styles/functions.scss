@@ -1,0 +1,19 @@
+/* Get a repeating background image */
+
+@function getBackgroundImage($image, $imageAmount) {
+    $result: null;
+    @for $i from 0 to $imageAmount {
+        $result: append($result, $image, $separator: comma);
+    }
+    @return $result;
+}
+
+/* Get a repeating background position */
+
+@function getBackgroundPosition($imageWidth, $imageAmount) {
+    $result: null;
+    @for $i from 0 to $imageAmount {
+        $result: append($result, $imageWidth * $i, $separator: comma);
+    }
+    @return $result;
+}

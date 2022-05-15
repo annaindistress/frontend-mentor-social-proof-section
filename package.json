@@ -1,0 +1,18 @@
+{
+    "private": true,
+    "scripts": {
+        "build": "gulp build",
+        "start": "gulp start",
+        "deploy": "gulp deploy"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.27.9",
+        "del": "^6.0.0",
+        "gh-pages": "^4.0.0",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^8.0.0",
+        "gulp-csso": "^4.0.1",
+        "gulp-sass": "^5.1.0",
+        "sass": "^1.51.0"
+    }
+}

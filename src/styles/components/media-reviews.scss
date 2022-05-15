@@ -1,0 +1,43 @@
+.media-reviews {
+    padding: 0;
+    list-style: none;
+
+    &__item {
+        position: relative;
+        margin-bottom: 16px;
+        padding: 16px;
+        padding-top: 48px;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 1.1;
+        letter-spacing: normal;
+        text-align: center;
+        color: $color-primary-magenta;
+        background-color: $color-neutral-magenta-light;
+        border-radius: 8px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        &::before {
+            $image: url('../images/icon-star.svg');
+            $imageWidth: 25px;
+            $imageAmount: 5;
+
+            content: '';
+            position: absolute;
+            top: 16px;
+            left: 50%;
+            display: block;
+            width: 116px;
+            height: 16px;
+            background-image: getBackgroundImage($image, $imageAmount);
+            background-repeat: no-repeat;
+            background-position-x: getBackgroundPosition($imageWidth, $imageAmount);
+            background-position-y: 0;
+            background-size: 17px 16px;
+            transform: translateX(-50%);
+        }
+    }
+}

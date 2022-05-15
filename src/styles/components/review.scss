@@ -1,0 +1,52 @@
+.review {
+    padding: 40px 32px;
+    color: $color-neutral-white;
+    background-color: $color-primary-magenta;
+    border-radius: 8px;
+
+    &__header {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+
+    &__avatar {
+        width: 40px;
+        height: 40px;
+        margin-right: 24px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__name {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin: 0;
+        font-size: 17px;
+        line-height: 1;
+        letter-spacing: normal;
+    }
+
+    &__status {
+        margin-top: 4px;
+        font-weight: 400;
+        text-transform: capitalize;
+        color: $color-primary-pink;
+    }
+
+    &__quote {
+        margin: 0;
+        font-size: 17px;
+        line-height: 1.29;
+        letter-spacing: -.3px;
+
+        &::before {
+            content: '“ ';
+        }
+        &::after {
+            content: " ”";
+        }
+    }
+}
