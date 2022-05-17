@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://github.com/annaindistress/frontend-mentor-social-proof-section-hub)
-- [Live Site URL](https://annaindistress.github.io/frontend-mentor-social-proof-section-hub/)
+- [Solution URL](https://github.com/annaindistress/frontend-mentor-social-proof-section)
+- [Live Site URL](https://annaindistress.github.io/frontend-mentor-social-proof-section/)
 
 ## My process
 
